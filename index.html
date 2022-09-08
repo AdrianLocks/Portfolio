@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">   <!--referencia ao arquivo css-->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!--referencia bootstrap-->
+  
   <title>Meu Portfolio</title>
 </head>
 
@@ -20,15 +21,16 @@
             <h1><span>A</span>dri<span>A</span>N</h1> <!--divisao das letras para estilizacao-->
           </a>
         </div>
-        <div class="nav-list">
+        <div class="nav-list">  <!--bloco da barra de navegacao e menu-->
           <div class="hamburger">
             <div class="bar"></div>
           </div>
           <ul>
             <li><a href="#principal" data-after="Home">Inicio</a></li>  <!--lista de links desordenada-->
-            <li><a href="#projects" data-after="Projects">Projetos</a></li>
-            <li><a href="#about" data-after="About">Sobre</a></li>
-            <li><a href="#contact" data-after="Contact">Contato</a></li>
+            <li><a href="#projeto" data-after="Projeto">Projetos</a></li>
+            <li><a href="#sobre" data-after="sobre">Sobre</a></li>
+            <li><a href="#sobre" data-after="sobre">formação</a></li>
+            <li><a href="#contato" data-after="Contato">Contato</a></li>
           </ul>
         </div>
       </div>
@@ -39,39 +41,39 @@
 
   <!-- sessao principal  -->
   <section id="principal">
-    <div class="principal container">
+    <div class="principal container">  <!--container principal-->
       
       <div>
-        <h1>Olá, <span></span></h1>
+        <h1>Olá, <span></span></h1>       <!--palavras separadas para estilizacao individual-->
         <h1>Meu Nome é  <span></span></h1>
         <h1>Adrian C. Locks <span></span></h1>
-        <a href="Curriculo.pdf" type="button" class="cta">Curriculo </a>
+        <a href="Curriculo.pdf" type="button" class="cta">Curriculo </a> <!--link para curriculo pdf-->
       </div>
     </div>
   </section>
   <!-- fim sessao principal  -->
 
   <!-- Sessao Projeto -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
+  <section id="projeto">
+    <div class="projeto container">
+      <div class="projeto-header">
         <h1 class="section-title">Projetos <span>Recentes</span></h1>
       </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
+      <div class="todos-projeto">   <!--projetos criados e em andamentos, links-->
+        <div class="projeto-item">
+          <div class="projeto-info">
             <h1>Projeto 1</h1>
             <h2>Marquinho Lanches Website</h2>
             <p>
               <a href="https://adrianlocks.github.io/marquinholanches/">Clique aqui para conhecer o projeto!</a>
             </p>
           </div>
-          <div class="project-img">
-            <img src="./img/img-11.png" alt="img">
+          <div class="projeto-img">
+            <img src="./img/img-11.PNG" alt="img">
           </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
+        <div class="projeto-item">
+          <div class="projeto-info">
             <h1>Projeto 2</h1> 
             <h2>ConversorBR</h2>  
             <p>
@@ -79,8 +81,8 @@
               <a href="https://adrianlocks.github.io/ConversorBR/">Acesse o site e conheça o projeto em andamento! Clique aqui!</a>
             </p>
           </div>
-          <div class="project-img">
-            <img src="./img/img-20.png" alt="img">
+          <div class="projeto-img">
+            <img src="./img/img-20.PNG" alt="img">
           </div>
         </div>
         </div>
@@ -90,10 +92,10 @@
   <!-- Fim da sessao projetos -->
 
   <!-- Sessao Sobre -->
-  <section id="about">
-    <div class="about container">
+  <section id="sobre">
+    <div class="sobre container">
       <div class="col-left">
-        <div class="about-img">
+        <div class="sobre-img">
           <img src="./img/img-2.jpeg" alt="img">
         </div>
       </div>
@@ -109,46 +111,49 @@
   <!-- Fim da sessao sobre -->
 
   <!-- sessao contato -->
-  <section id="contact">
-    <div class="contact container">
+  <section id="contato">
+    <div class="contato container">
       <div>
         <h1 class="section-title">Contato<span>s</span></h1>
       </div>
-      <div class="contact-items">
-        <div class="contact-item">
+      <div class="contato-items">
+        <div class="contato-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
+          <div class="contato-info">
             <h1>Celular</h1>
             <h2> 048984079002</h2>
             <h2></h2>
           </div>
         </div>
-        <div class="contact-item">
+        <div class="contato-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
+          <div class="contato-info">
             <h1>Email</h1>
             <h2>Adrianlocks2013@gmail.com</h2>
             <h2>Adrianlocks2015@outlook.com</h2>
           </div>
         </div>
-        <div class="contact-item">
+        <div class="contato-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
+          <div class="contato-info">
             <h1>Endereço</h1>
             <h2>Palhoça,Santa Catarina,Brasil</h2>
           </div>
         </div>
-        <div class="contact-item">
+        <div class="contato-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
+          <div class="contato-info">
             <h1>Deixe seu contato!</h1>
-            <input type="number" name='Contato' placeholder='  (XX) XXXXXXXXX'>
+            <input type="text" name='nome' placeholder='  Digite seu nome'>  <!--input deixe seu contato-->
+            <input type="number" name='Contato' placeholder='  Tel (XX) XXXXXXXXX'>
+            
             <button name="button">SALVAR</button>
             <h2></h2>
           </div>
         </div>
       </div>
     </div>
+    
   </section>
   <!-- Fim da sessao contato -->
 
@@ -159,7 +164,7 @@
         <h1><span>A</span>dr<span>ian</span> C. <span>Lo</span>cks</h1>
       </div>
       <h2></h2>
-      <div class="social-icon">
+      <div class="social-icon">  <!--bloco para as midias sociais-->
         <div class="social-item">
           <a href="https://www.facebook.com/adrianlocks2012"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
         </div>
@@ -180,6 +185,7 @@
   </section>
   <!-- Fim Footer -->
 
+  <!--scripts, referencia arquivo js do projeto e bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" 
@@ -187,7 +193,7 @@
   
   
 
-  <script src="./app.js"></script>   <!-- referencia arquivo js -->
+  <script src="./app.js"></script>   
 </body>
 
 </html>

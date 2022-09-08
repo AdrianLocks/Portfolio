@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
-* {
+/* comeco estilizacao geral */
+* {      
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -75,6 +76,8 @@ p {
 .brand h1 span {
 	color: crimson;
 }
+
+/* fim da estilizacao geral */
 
 /* sessao do cabecalho*/
 #header {
@@ -269,85 +272,25 @@ p {
 
 /* fim sessao principal */
 
-/* Sessao servicos */
-#services .services {
-	flex-direction: column;
-	text-align: center;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 100px 0;
-}
-#services .service-top {
-	max-width: 500px;
-	margin: 0 auto;
-}
-#services .service-bottom {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
-}
-#services .service-item {
-	flex-basis: 80%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: url(./img/img-1.png);
-	background-size: cover;
-	margin: 10px 5%;
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
-}
-#services .service-item::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.9;
-	z-index: -1;
-}
-#services .service-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
-}
-#services .service-item h2 {
-	font-size: 2rem;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-#services .service-item p {
-	color: white;
-	text-align: left;
-}
-/* fim da sessao servicos */
+
 
 /* sessao projetos */
-#projects .projects {
+#projeto .projeto {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#projects .projects-header h1 {
+#projeto .projeto-header h1 {
 	margin-bottom: 50px;
 }
-#projects .all-projects {
+#projeto .todos-projeto {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#projects .project-item {
+#projeto .projeto-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -357,7 +300,7 @@ p {
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info {
+#projeto .projeto-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -368,26 +311,26 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
-#projects .project-info h1 {
+#projeto .projeto-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
-#projects .project-info h2 {
+#projeto .projeto-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#projects .project-info p {
+#projeto .projeto-info p {
 	color: white;
 }
-#projects .project-img {
+#projeto .projeto-img {
 	
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#projects .project-img:after {
+#projeto .projeto-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -397,52 +340,52 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.1;
 }
-#projects .project-img img {
+#projeto .projeto-img img {
 	
 	transition: 0.3s ease transform;
 }
-#projects .project-item:hover .project-img img {
+#projeto .projeto-item:hover .projeto-img img {
 	transform: scale(1.1);
 }
 /* fim da sessao projetos */
 
 /* sessao sobre */
-#about .about {
+#sobre .sobre {
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-#about .col-left {
+#sobre .col-left {
 	width: 250px;
 	height: 360px;
 }
-#about .col-right {
+#sobre .col-right {
 	width: 100%;
 }
-#about .col-right h2 {
+#sobre .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
-#about .col-right p {
+#sobre .col-right p {
 	margin-bottom: 20px;
 }
-#about .col-right .cta {
+#sobre .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
-#about .col-left .about-img {
+#sobre .col-left .sobre-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
-#about .col-left .about-img::after {
+#sobre .col-left .sobre-img::after {
 	content: '';
 	position: absolute;
 	left: -33px;
@@ -455,17 +398,17 @@ p {
 /* fim da sessao sobre */
 
 /* sessao contato */
-#contact .contact {
+#contato .contato {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
 }
-#contact .contact-items {
+#contato .contato-items {
 	/* max-width: 400px; */
 	width: 100%;
 }
-#contact .contact-item {
+#contato .contato-item {
 	width: 80%;
 	padding: 20px;
 	text-align: center;
@@ -479,37 +422,38 @@ p {
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: 0.3s ease box-shadow;
 }
-#contact .contact-item:hover {
+#contato .contato-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
 }
-#contact .icon {
+#contato .icon {
 	width: 70px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
-#contact .contact-info h1 {
+#contato .contato-info h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
 	margin-bottom: 5px;
 }
-#contact .contact-info h2 {
+#contato .contato-info h2 {
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
 }
-#contact .contact-item button:hover {
+#contato .contato-item button:hover {
 	background-color: crimson;
 }
-#contact .contact-item button{
+#contato .contato-item button{
 	border:2px solid crimson;
 	transform: scale(1);
-        width: 40%;
+    width: 40%;
 	margin-top: 10%;
 	text-align: center;
 	color:black;
 	background-color:white;
 }
 
+	
 /*fim da sessao contato */
 
 /* Footer(rodape) */
@@ -602,87 +546,80 @@ p {
 	}
 	/* fim principal */
 
-	/* Sessao servicos */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-	/* fim servicos */
-
 	/* Projeto */
-	#projects .project-item {
+	#projeto .projeto-item {
 		flex-direction: row;
 	}
-	#projects .project-item:nth-child(even) {
+	#projeto .projeto-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
-	#projects .project-item {
+	#projeto .projeto-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
-	#projects .all-projects .project-info {
+	#projeto .todos-projeto .projeto-info {
 		height: 100%;
 	}
-	#projects .all-projects .project-img {
+	#projeto .todos-projeto .projeto-img {
 		height: 100%;
 	}
 	/* fim Projeto */
 
 	/* sobre */
-	#about .about {
+	#sobre .sobre {
 		flex-direction: row;
 	}
-	#about .col-left {
+	#sobre .col-left {
 		width: 600px;
 		height: 400px;
 		padding-left: 60px;
 	}
-	#about .about .col-left .about-img::after {
+	#sobre .sobre .col-left .sobre-img::after {
 		left: -45px;
 		top: 34px;
 		height: 98%;
 		width: 98%;
 		border: 10px solid crimson;
 	}
-	#about .col-right {
+	#sobre .col-right {
 		text-align: left;
 		padding: 30px;
 	}
-	#about .col-right h1 {
+	#sobre .col-right h1 {
 		text-align: left;
 	}
 	/* fim sobre */
 
 	/* contato  */
-	#contact .contact {
+	#contato .contato {
 		flex-direction: column;
 		padding: 100px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
 	}
-	#contact .contact-items {
+	#contato .contato-items {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		margin: 0;
 	}
-	#contact .contact-item {
+	#contato .contato-item {
 		width: 30%;
 		margin: 0;
 		flex-direction: row;
 	}
-	#contact .contact-item .icon {
+	#contato .contato-item .icon {
 		height: 100px;
 		width: 100px;
 	}
-	#contact .contact-item .icon img {
+	#contato .contato-item .icon img {
 		object-fit: contain;
 	}
-	#contact .contact-item .contact-info {
+	#contato .contato-item .contato-info {
 		width: 100%;
 		text-align: left;
 		padding-left: 20px;
