@@ -444,9 +444,10 @@ p {
 	background-color: crimson;
 }
 #contato .contato-item button{
+	border-radius: 0%;
 	border:2px solid crimson;
 	transform: scale(1);
-    width: 40%;
+        width: 40%;
 	margin-top: 10%;
 	text-align: center;
 	color:black;
