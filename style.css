@@ -447,15 +447,17 @@ p {
 	border-radius: 0%;
 	border:2px solid crimson;
 	transform: scale(1);
-        width: 40%;
+        width: 100%;
 	margin-top: 10%;
 	text-align: center;
 	color:black;
 	background-color:white;
 }
-
-	
+#contato .contato-item .form-group{
+	width: 150px;
+}	
 /*fim da sessao contato */
+
 
 /* Footer(rodape) */
 #footer {
