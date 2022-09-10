@@ -466,11 +466,13 @@ p {
 	margin-bottom: 10px;
 }
 #contato .contato-info h1 {
+	margin-left: 0%;
 	font-size: 2.5rem;
 	font-weight: 500;
 	margin-bottom: 5px;
 }
 #contato .contato-info h2 {
+	margin-left: 0%;
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
@@ -479,6 +481,7 @@ p {
 	background-color: var(--primary-color);
 }
 #contato .contato-item button{
+	
 	border-radius: 0%;
 	border:2px solid var(--primary-color);
 	transform: scale(1);
@@ -494,8 +497,10 @@ p {
 	width: 256px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	
 }
+
+
 
 	
 /*fim da sessao contato */
@@ -690,7 +695,45 @@ p {
 		width: 190px;
 		
 	}
-	
+
+
+	#contato .contato-info h1 {
+		margin-left: 20%;
+		font-size: 2.5rem;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+	#contato .contato-info h2 {
+		margin-top: 5%;
+		margin-left: 15%;
+		font-size: 1.3rem;
+		line-height: 2rem;
+		font-weight: 500;
+	}
+	#contato .contato-item button:hover {
+		background-color: var(--primary-color);
+	}
+	#contato .contato-item button{
+		font-style: italic;
+		font-size:small;
+		margin-left: 115%;
+		border-radius: 0%;
+		border:2px solid var(--primary-color);
+		transform: scale(1);
+		width: 100%;
+		margin-top: 10%;
+		text-align: center;
+		color:black;
+		background-color:white;
+	}
+	#contato .contato-item  .form-control{
+		
+		margin: 5px 10px;
+		width: 256px;
+		display: flex;
+		flex-direction: column;
+		
+	}
 	/* fim contato  */
 }
 /* fim Media Query para Tablet */
