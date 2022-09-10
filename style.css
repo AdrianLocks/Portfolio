@@ -1,6 +1,26 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
 /* comeco estilizacao geral */
+
+:root {
+	--background-color: white; /* variavel para usar nas alteracoes */
+	--primary-color:crimson;
+}
+
+.ligth:root{
+	--background-color: black; /* variaveis para  alteracao de cores */
+	--primary-color:#5ee543;
+}
+
+.mudaCor{ 
+	font-size:120%;
+	color:grey;
+	position:relative;            /* botao alteraCores */
+	margin-left: 96%;
+	margin-top:0%;
+	border-radius: 1% solid crimson;
+}
+
 * {      
 	padding: 0;
 	margin: 0;
