@@ -21,21 +21,27 @@
 	border-radius: 1% solid crimson;
 }
 
+
 * {      
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 html {
+	
 	font-size: 10px;
 	font-family: 'Montserrat',sans-serif;
 	scroll-behavior: smooth;
+
+	
 }
+
+   
 h1 {
 	font-family: 'Montserrat',sans-serif;
 }
 a {
-	text-decoration:crimson;
+	text-decoration:var(--primary-color);
 }
 .container {
 	min-height: 100vh;
@@ -68,7 +74,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: crimson;
+	color:var(--primary-color);
 }
 
 .cta {
@@ -76,7 +82,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid crimson;
+	border: 2px solid var(--primary-color);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -86,7 +92,7 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: crimson;
+	background-color: var(--primary-color);
 }
 .brand h1 {
 	font-size: 3rem;
@@ -94,13 +100,17 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color: crimson;
+	color: var(--primary-color);
 }
+
+
+
 
 /* fim da estilizacao geral */
 
 /* sessao do cabecalho*/
 #header {
+
 	position: fixed;
 	z-index: 1000;
 	left: 0;
@@ -168,7 +178,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: crimson;
+	color: var(--primary-color);
 }
 #header .hamburger {
 	height: 60px;
@@ -234,6 +244,11 @@ p {
 	position: relative;
 	z-index: 1;
 }
+
+
+
+
+
 #principal::after {
 	content: '';
 	position: absolute;
@@ -276,7 +291,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: crimson;
+	background-color: var(--primary-color);
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -412,7 +427,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson;
+	border: 7px solid var(--primary-color);
 	z-index: -1;
 }
 /* fim da sessao sobre */
@@ -461,23 +476,25 @@ p {
 	font-weight: 500;
 }
 #contato .contato-item button:hover {
-	background-color: crimson;
+	background-color: var(--primary-color);
 }
 #contato .contato-item button{
 	border-radius: 0%;
-	border:2px solid crimson;
+	border:2px solid var(--primary-color);
 	transform: scale(1);
-        width: 100%;
+    width: 100%;
 	margin-top: 10%;
 	text-align: center;
 	color:black;
 	background-color:white;
 }
-#contato .contato-item .form-group{
+#contato .contato-item  .form-control{
 	width: 150px;
-}	
-/*fim da sessao contato */
+	
+}
 
+	
+/*fim da sessao contato */
 
 /* Footer(rodape) */
 #footer {
@@ -547,7 +564,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: crimson;
+		color: var(--primary-color);
 		font-weight: 500;
 	}
 }
@@ -604,7 +621,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border: 10px solid var(--primary-color);
 	}
 	#sobre .col-right {
 		text-align: left;
