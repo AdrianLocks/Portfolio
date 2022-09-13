@@ -12,17 +12,28 @@
 	--primary-color:#5ee543;
 }
 
-.mudaCor{ 
-	font-size:120%;
-	color:grey;
-	position:relative;            /* botao alteraCores */
-	margin-left: 96%;
-	margin-top:0%;
-	border-radius: 1% solid crimson;
+.form-switch{
+	border: var(--primary-color); 
+	color: var(--primary-color);
+	margin-right:25px;
+	margin-top: 2px;
+	float:right;
 }
-.mudaCor:hover{
+
+#header .nav-list  ul .form-switch{
+	border: var(--primary-color); 
+	color: var(--primary-color);
+	margin-left: auto;
+	margin-top: -2px;
+	
+}
+#header .nav-list ul .form-switch:hover{
  color:var(--primary-color) ;
 	
+}
+
+#header .nav-list ul .form-check-input i {
+	color:var(--primary-color) ;
 }
 
 * {      
@@ -486,6 +497,7 @@ p {
 }
 #contato .contato-item .icon:hover {
 	width: 95px;
+	
 }
 #contato .contato-info h1 {
 	margin-left: 0%;
@@ -613,6 +625,8 @@ p {
 
 /* Media Query para Tablet */                 /* comeco das responsividades */
 @media only screen and (min-width: 768px) {
+	
+
 	
 	.mudaCor{
 		 
@@ -765,11 +779,36 @@ p {
 }
 /* fim Media Query para Tablet */
 
+
+/* media queries aparelhos menores */
+
+@media only screen and (min-width: 120px){
+	.form-switch{
+		border: var(--primary-color); 
+		color: var(--primary-color);
+		margin-right:2px;
+		margin-top: 2px;
+		float:right;
+	}
+}
+
+/* fim media aparelhos menores */
+
+
 /* Media Query para Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
+    
 
+    .form-switch{
+		border: var(--primary-color); 
+		color: var(--primary-color);
+		margin-right:120px;
+		margin-top: -48px;
+		float:right;
+	}
 
+	
 	#header .hamburger {
 		display: none;
 	}
