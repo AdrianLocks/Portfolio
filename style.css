@@ -20,7 +20,10 @@
 	margin-top:0%;
 	border-radius: 1% solid crimson;
 }
-
+.mudaCor:hover{
+ color:var(--primary-color) ;
+	
+}
 
 * {      
 	padding: 0;
@@ -382,6 +385,11 @@ p {
 #projeto .projeto-item:hover .projeto-img img {
 	transform: scale(1.1);
 }
+
+#projeto .projeto-info a:hover {
+	font-size:110%;
+}
+
 /* fim da sessao projetos */
 
 /* sessao sobre */
@@ -399,6 +407,7 @@ p {
 #sobre .col-right {
 	width: 100%;
 }
+
 #sobre .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -408,17 +417,27 @@ p {
 #sobre .col-right p {
 	margin-bottom: 20px;
 }
+#sobre .col-right p:hover {
+	font-size:180%;
+	
+}
 #sobre .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+
+
 #sobre .col-left .sobre-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
+}
+#sobre .col-left .sobre-img:hover {
+    width:102%;
+	height:102%;
 }
 #sobre .col-left .sobre-img::after {
 	content: '';
@@ -465,6 +484,9 @@ p {
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
+#contato .contato-item .icon:hover {
+	width: 95px;
+}
 #contato .contato-info h1 {
 	margin-left: 0%;
 	font-size: 2.5rem;
@@ -476,6 +498,10 @@ p {
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
+}
+#contato .contato-info h2:hover {
+	text-shadow: 1px 1px 1px var(--primary-color);
+	font-size: 140%;
 }
 #contato .contato-item button:hover {
 	background-color: var(--primary-color);
@@ -538,6 +564,7 @@ p {
 }
 #footer .social-item:hover img {
 	filter: grayscale(0);
+	width:60px
 }
 #footer p {
 	color: white;
