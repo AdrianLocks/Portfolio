@@ -19,7 +19,12 @@
 	margin-top: 2px;
 	float:right;
 }
-
+#header  a h1:hover{
+	transform: rotate(360deg);   /*--hover-rotacao-logo---*/
+	transition: transform .6s;
+	width:100px;
+	height:45px;
+}
 #header .nav-list  ul .form-switch{
 	border: var(--primary-color); 
 	color: var(--primary-color);
