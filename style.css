@@ -18,13 +18,22 @@
 	--contato-boxshadow:white;
 }
 
+
+
 .form-switch{
+	-webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+
+        transform: rotate(90deg);
 	border: var(--primary-color); 
 	color: var(--primary-color);
 	margin-right:25px;
 	margin-top: 2px;
 	float:right;
 }
+
 #header  a h1:hover{
 	transform: rotate(360deg);   /*--hover-rotacao-logo---*/
 	transition: transform .6s;
@@ -677,6 +686,7 @@ p {
 
 /* Media Query para Tablet */                 /* comeco das responsividades */
 @media only screen and (min-width: 768px) {
+
 	
 
 	
@@ -835,11 +845,20 @@ p {
 /* media queries aparelhos menores */
 
 @media only screen and (min-width: 120px){
+
+	
+
 	.form-switch{
+		-webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+
+        transform: rotate(90deg);
 		border: var(--primary-color); 
-		color: var(--primary-color);
-		margin-right:2px;
-		margin-top: 2px;
+		color: var(--secundary-color);
+		margin-right:-9px;
+		margin-top: 16px;
 		float:right;
 	}
 }
@@ -851,16 +870,27 @@ p {
 @media only screen and (min-width: 1200px) {
 	/* header */
     
+    
 
-    .form-switch{
+    .form-switch {
+
+		
+		-webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+
+        transform: rotate(90deg);
 		border: var(--primary-color); 
-		color: var(--primary-color);
+		color: var(--secundary-color);                      /*----dekstop-----*/
 		margin-right:120px;
-		margin-top: -48px;
+		margin-top: -30px;
 		float:right;
+		
 	}
 
 	
+
 	#header .hamburger {
 		display: none;
 	}
