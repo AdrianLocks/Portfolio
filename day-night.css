@@ -1,0 +1,144 @@
+
+
+
+
+
+.day-night{
+	float: inline-end;
+	position:fixed;
+	right:0;
+	margin-right: 1%;
+	top:80px;
+	padding:15px ;
+	width: 25px;
+	height: 25px;;
+	border: 1px solid var(--background-color);
+	background: var(--secundary-color);
+	z-index: -1;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.day-night .s-icon
+{   
+	
+    position:absolute;
+	height:40px;
+	width:40px;
+	text-align: center;
+	font-size: 25px;
+	background:var(--background-color);
+	color: var(--background-color);
+	right:100%;
+	border: 1px solid var(--contato-color);
+	margin-right:15%;
+	cursor:pointer;
+	transition: all 0.3s ease;
+	border-radius: 50%;
+}
+.day-night i{
+	position:absolute;
+	margin-top:-5px;
+	margin-left:-15%;
+	color:var(--background-color);
+	
+	
+}
+.day-night  .s-icon i{
+	line-height: 40px;
+	
+
+    
+}
+.day-night .day-night-toggler{
+	top: 0;
+}
+
+/* responsividade dekstop *//*
+@media only screen and (min-width: 1200px) {
+
+	.day-night{
+		
+		
+		position:fixed;
+		right:-30px;
+		margin-right: 9%;
+		top:20px;
+		padding:15px ;
+		width: 20px;
+		height: 20px;;
+		border: 1px solid var(--background-color);
+		background: var(--secundary-color);
+		z-index: -1;
+		border-radius: 50%;
+		transition: all 0.3s ease;
+	}
+	.day-night .s-icon
+	{   
+		
+		position:absolute;
+		height:40px;
+		width:40px;
+		text-align: center;
+		font-size: 25px;
+		background:var(--background-color);
+		color: var(--background-color);
+		right:100%;
+		border: 1px solid var(--contato-color);
+		margin-right:15%;
+		cursor:pointer;
+		transition: all 0.3s ease;
+		border-radius: 50%;
+	}
+	.day-night i{
+		position:absolute;
+		margin-top:-5px;
+		margin-left:-15%;
+		color:var(--background-color);
+		
+		
+	}
+	.day-night  .s-icon i{
+		line-height: 40px;
+		
+	
+		
+	}
+	.day-night .day-night-toggler{
+		top: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.day-night{
+		
+		margin-top: 0px;
+		right: -104px;
+		
+   }
+}
+/* responsividade celulares menores */
+
+/*
+@media only screen and (min-width: 240px){
+
+
+	
+
+	.day-night{
+		
+		margin-top:585px;
+		right:-85px;
+	}
+}
+/* responsividade celulares maiores *//*
+@media only screen and (min-width: 400px){
+
+
+	
+
+	.day-night{
+		right: -85px;
+		margin-top:775px;
+	}
+}*/

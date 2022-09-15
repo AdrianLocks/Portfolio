@@ -10,7 +10,7 @@
 	--contato-boxshadow:#0000002c;
 }
 
-.ligth:root{
+body.dark{
 	--background-color: black; /* variaveis para  alteracao de cores */
 	--primary-color:#5ee543;
 	--secundary-color:white;
@@ -19,8 +19,7 @@
 }
 
 
-
-.form-switch{
+/*.form-switch{
 	-webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
@@ -32,7 +31,7 @@
 	margin-right:25px;
 	margin-top: 2px;
 	float:right;
-}
+}*/
 
 #header  a h1:hover{
 	transform: rotate(360deg);   /*--hover-rotacao-logo---*/
@@ -869,26 +868,25 @@ p {
 /* Media Query para Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
+
     
     
 
-    .form-switch {
+    /*.form-switch {
 
 		
 		-webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-
         transform: rotate(90deg);
 		border: var(--primary-color); 
-		color: var(--secundary-color);                      /*----dekstop-----*/
+		color: var(--secundary-color);                    
 		margin-right:120px;
 		margin-top: -30px;
 		float:right;
-		
-	}
-
+	} */
+     
 	
 
 	#header .hamburger {

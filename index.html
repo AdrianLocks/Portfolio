@@ -7,8 +7,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">   
   <link rel="stylesheet" href="style.css"> <!--referencia ao arquivo css e acima referencia ao bootstrap-->
- 
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="day-night.css">
 
   
   <title>Meu Portfólio</title>
@@ -25,6 +25,8 @@
             <h1><span>A</span>dri<span>A</span>N</h1> <!--divisao das letras para estilizacao-->
           </a>
         </div>
+        
+       
         <div class="nav-list">  <!--bloco da barra de navegacao e menu-->
           <div class="hamburger">
             <div class="bar"></div>
@@ -35,19 +37,34 @@
             <li><a href="#sobre" data-after="sobre">Sobre</a></li>
             <li><a href="#sobre" data-after="sobre">formação</a></li>
             <li><a href="#contato" data-after="Contato">Contato</a></li>
-             
+            
+           
           </ul>
+          
+         
         </div>
       </div> 
     </div>
-    <div class="form-check form-switch">
+    
+    <div class="day-night" id="day-night" ">
+      <!--div class="day-night s-icon"-->
+        <i class="fas fa-moon"></i>
+      </div>  
+    </div>
+
+    <!--div class="form-check form-switch">
+      
       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked 
         style="background-color:black; border-color:white; box-shadow:none; 
         margin-top:-1px; width:25px;height:13px;">
        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-      <i class="fa-solid fa-wand-magic-sparkles"></i>
-    </div>
-
+         
+       <i class="fa-solid fa-wand-magic-sparkles"></i>
+     
+      
+       
+      
+    </div-->
    
 
   </section>
@@ -188,6 +205,8 @@
     
   </section>
   <!-- Fim da sessao contato -->
+  
+  
 
   <!-- Footer(rodape) -->
   <section id="footer">
@@ -227,10 +246,11 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
   
-  
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script src="./day-night.js"></script>
   <script src="./index.js"></script>
-  <script src="./app.js"></script>   
+  <script src="./app.js"></script> 
+  <script src="./arrasta.js"></script>   
 </body>
 
 </html>
