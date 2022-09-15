@@ -52,7 +52,12 @@
 .day-night .day-night-toggler{
 	top: 0;
 }
-
+.day-night:hover{
+	width: 35px;
+	height: 35px;
+	
+	box-shadow: var(--primary-color) 0px 5px 5px;
+}
 /* responsividade dekstop *//*
 @media only screen and (min-width: 1200px) {
 
