@@ -53,97 +53,114 @@
 	top: 0;
 }
 .day-night:hover{
+	
 	/*width: 35px;
 	height: 35px;*/
 	
 	box-shadow: var(--primary-color) 0px 0px 12px;
 }
-/* responsividade dekstop *//*
+
+/* responsividade dekstop */
 @media only screen and (min-width: 1200px) {
 
 	.day-night{
 		
 		
-		position:fixed;
-		right:-30px;
-		margin-right: 9%;
+		
+		right:0px;
+		margin-right: 7%;
 		top:20px;
-		padding:15px ;
-		width: 20px;
-		height: 20px;;
-		border: 1px solid var(--background-color);
-		background: var(--secundary-color);
-		z-index: -1;
-		border-radius: 50%;
-		transition: all 0.3s ease;
-	}
-	.day-night .s-icon
-	{   
-		
-		position:absolute;
-		height:40px;
-		width:40px;
-		text-align: center;
-		font-size: 25px;
-		background:var(--background-color);
-		color: var(--background-color);
-		right:100%;
-		border: 1px solid var(--contato-color);
-		margin-right:15%;
-		cursor:pointer;
-		transition: all 0.3s ease;
-		border-radius: 50%;
-	}
-	.day-night i{
-		position:absolute;
-		margin-top:-5px;
-		margin-left:-15%;
-		color:var(--background-color);
-		
 		
 	}
-	.day-night  .s-icon i{
-		line-height: 40px;
-		
 	
-		
-	}
-	.day-night .day-night-toggler{
-		top: 0;
-	}
-}
+}	
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:960px){
 
 	.day-night{
-		
-		margin-top: 0px;
-		right: -104px;
+		position:fixed;
+		margin-top: 20px;
+		right: 75px;
 		
    }
 }
-/* responsividade celulares menores */
 
-/*
-@media only screen and (min-width: 240px){
+ /*responsividade celulares maiores */
+ @media  screen and (min-width: 360px) and (max-width:600px){
+
+
+	
+
+	.day-night{
+		right: 0px;
+		margin-top:740px;
+	}
+}
+/* responsividade celulares s8 e iphone se */
+@media only screen and (min-device-width: 375px) and (max-device-width:400px) and (min-device-height:660px) and (max-device-height:920px){
 
 
 	
 
 	.day-night{
 		
-		margin-top:585px;
-		right:-85px;
+		margin-top:695px;
+		right:0px;
 	}
 }
-/* responsividade celulares maiores *//*
-@media only screen and (min-width: 400px){
+@media only screen and (min-device-width: 360px) and (max-device-width:400px) and (min-device-height:660px) and (max-device-height:920px){
 
 
 	
 
 	.day-night{
-		right: -85px;
-		margin-top:775px;
+		
+		margin-top:695px;
+		right:0px;
 	}
-}*/
+}
+/*--*/
+
+
+/* responsividade celulares iphone x  */
+
+@media screen and (min-width: 360px) and (max-width:400px){
+
+
+	
+
+	.day-night{
+		
+		margin-top:695px;
+		right:0px;
+	}
+}
+
+
+
+/* responsividade celulares menores */
+@media screen and (min-width: 240px) and (max-width:360px){
+
+
+	
+
+	.day-night{
+		
+		margin-top:523px;
+		right:0px;
+	}
+}
+
+/* galaxy fold*/
+@media screen and (min-width: 240px) and (max-width:280px){
+
+
+	
+
+	.day-night{
+		
+		margin-top:530px;
+		right:14px;
+	}
+}
+ 
