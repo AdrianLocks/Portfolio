@@ -97,7 +97,7 @@
 	}
 }
 /* responsividade celulares s8 e iphone se */
-@media only screen and (min-device-width: 375px) and (max-device-width:400px) and (min-device-height:660px) and (max-device-height:920px){
+@media only screen and (min-device-width: 374px) and (max-device-width:400px) and (min-device-height:400px) and (max-device-height:668px){
 
 
 	
@@ -122,9 +122,24 @@
 /*--*/
 
 
-/* responsividade celulares iphone x  */
+/* responsividade celulares (varios) iphone /6/7/8  */
 
-@media screen and (min-width: 360px) and (max-width:400px){
+@media screen and (min-width: 360px) and (max-width:400px) {
+
+
+	
+
+	.day-night{
+		
+		margin-top:540px;
+		right:0px;
+	}
+}
+
+/*--*/
+
+/*--iphone x */
+@media screen and (min-width: 360px) and (max-width:400px) and (min-height:800px) and (max-height:812px){
 
 
 	
@@ -137,6 +152,22 @@
 }
 
 
+/* responsividade celulares (varios) iphone x/6/7/8 PLUS  */
+
+@media screen and (min-width: 360px) and (max-width:480px) and (min-height:668px) and (max-height:800px){
+
+
+	
+
+	.day-night{
+		
+		margin-top:618px;
+		right:0px;
+	}
+}
+
+/*--*/
+
 
 /* responsividade celulares menores */
 @media screen and (min-width: 240px) and (max-width:360px){
@@ -146,10 +177,38 @@
 
 	.day-night{
 		
-		margin-top:523px;
+		margin-top:450px;
 		right:0px;
 	}
 }
+
+/* s8, s8+ */
+@media only screen and (min-device-width: 240px) and (max-device-width:360px) and (min-device-height:600px) and (max-device-height:740px){
+
+
+	
+
+	.day-night{
+		
+		margin-top:622px;
+		right:0px;
+	}
+}
+
+/* g4,s3, */
+@media only screen and (min-device-width: 240px) and (max-device-width:360px) and (min-device-height:600px) and (max-device-height:640px){
+
+
+	
+
+	.day-night{
+		
+		margin-top:522px;
+		right:0px;
+	}
+}
+
+/*--*/
 
 /* galaxy fold*/
 @media screen and (min-width: 240px) and (max-width:280px){
