@@ -940,3 +940,20 @@ p {
 }
 
 }
+
+@media  screen and (min-width: 400px) and (max-width:600px){
+    #projeto .projeto-item {
+		border:50%;
+		width:280px;
+		padding: 0 0px 0px;
+		
+	}
+	
+	#projeto .projeto-img img {
+		height: 200px;
+		border:50%;
+	}
+	#projeto .todos-projeto{
+		padding: 0 0px 0px;
+	}
+}
