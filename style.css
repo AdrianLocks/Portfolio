@@ -8,6 +8,7 @@
 	--secundary-color:black;
 	--contato-color:white;
 	--contato-boxshadow:#0000002c;
+	--sobre-paragrafo:rgb(93, 90, 90);
 }
 
 body.dark{
@@ -16,6 +17,7 @@ body.dark{
 	--secundary-color:white;
 	--contato-color: rgba(5, 4, 4, 0.24);
 	--contato-boxshadow:white;
+	--sobre-paragrafo:rgb(255, 255, 255);
 }
 
 
@@ -507,20 +509,27 @@ p {
 #sobre .col-right {
 	width: 100%;
 }
-
+#sobre .col-right p a{
+	color:var(--primary-color)
+}
+#sobre .col-right p a:hover{
+	font-size: 110%;
+	
+}
 #sobre .col-right h2 {
-	font-size: 1.8rem;
+
+	font-size: x-large 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
 #sobre .col-right p {
+	color: var(--sobre-paragrafo);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size:large;
 	margin-bottom: 20px;
 }
-#sobre .col-right p:hover {
-	font-size:180%;
-	
-}
+
 #sobre .col-right .cta {
 	color:var(--secundary-color);
 	margin-bottom: 50px;
@@ -986,8 +995,16 @@ p {
 	margin-left: 20%;   /*--*/
 }
 
-}
 
+#sobre .col-right h2 {
+
+	font-size: x-large 1.8rem ;
+}
+#sobre .col-right p {
+
+	font-size:medium;
+}
+}
 
 @media  screen and (min-width: 400px) and (max-width:600px){
     #projeto .projeto-item {
@@ -1009,5 +1026,13 @@ p {
 		margin-top:-95px;
 		padding: 10px 10px 10px 10px;
 		margin-left: 10px;
+	}
+	#sobre .col-right h2 {
+
+		font-size: x-large 1.8rem;
+	}
+	#sobre .col-right p {
+
+		font-size: medium ;
 	}
 }
