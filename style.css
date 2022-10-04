@@ -598,6 +598,7 @@ p {
 }
 /* fim formacao*/
 
+
 /* sessao contato */
 #contato h1{
 	
@@ -789,7 +790,7 @@ p {
 
 /* fim Media Query para celulares */
 
-/* Media Query para Tablet */                 /* comeco das responsividades */
+/* Media Query para Tablet */                 /* -------------comeco das responsividades------------- */
 @media only screen and (min-width: 768px) {
 
 	
@@ -944,10 +945,10 @@ p {
 	}
 	/* fim contato  */
 }
-/* fim Media Query para Tablet */
+/* fim Media Query para Tablet ------------------------------------------------------*/
 
 
-/* media queries aparelhos menores */
+/* media queries aparelhos menores ---------------------------------------------------*/
 
 @media only screen and (min-width: 120px){
 
@@ -971,7 +972,7 @@ p {
 /* fim media aparelhos menores */
 
 
-/* Media Query para Desktop */
+/* Media Query para Desktop ---------------------------------------------------------------------*/
 @media only screen and (min-width: 1200px) {
 	/* header */
 
@@ -1062,12 +1063,15 @@ p {
 	#contato .contato-item button:hover {
 		background-color: var(--primary-color);
 	}
+	#contato .contato-info h2{
+		margin-top:20px;
+	  }
 }
-/* fim  Media Query para Desktop */
+/* fim  Media Query para Desktop ---------------------------------------------------------------*/
 
 
 
-/* responsividades elementos gerais-celulares */
+/* responsividades elementos gerais-celulares---------------------------------------------------- */
 
 @media  screen and (min-width: 360px) and (max-width:600px){
 
@@ -1095,6 +1099,18 @@ p {
    }
    #contato h1{
 	margin-top: 40%;
+   }
+   #contato h1{
+	margin-top: 40%;
+   }
+   #contato .contato-item .icon{
+	margin-top:70px;
+   }
+   #contato .form-group{
+	margin-top: 20px;
+   }
+   #contato .contato-info h2{
+	 margin-top:10px;
    }
 }
 
@@ -1158,5 +1174,14 @@ p {
    /* fim formacao*/
    #contato h1{
 	margin-top: 40%;
+   }
+   #contato .contato-item .icon{
+	margin-top:70px;
+   }
+   #contato .form-group{
+	margin-top: 20px;
+   }
+   #contato .contato-info h2{
+	 margin-top:10px;
    }
 }
