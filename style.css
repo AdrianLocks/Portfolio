@@ -566,36 +566,65 @@ p {
 	
 	
 }
+#sobre .span-cursos span{
+	color:rgba(3, 141, 3, 0.59);
+	font-style:normal;
+	font-size: large;
+}
+#sobre .span-facul span{
+	color:blue;
+	font-style:normal;
+	font-size:large;
+}
 /* fim da sessao sobre */
 
 /* sessao formacao*/
-#formacao .container{
-	
+#formacao{
+	background-color: var(--background-color);
+}
+#formacao .container-fluid{
+	width: 50%;
 	max-width: 100%;
 	background-color: var(--background-color);
-	flex-direction:column;
-	position: relative;
-	
-    
+	flex-direction: column;
+	text-align: center;
+	display: flex;
+    align-content: center;
 }
 #formacao h1{
-	margin-top: 5%;
+	align-content: center;
+	text-align: center;
+	margin-top: 15%;
 	padding: 0 10px 40px 10px;
 	color:var(--secundary-color)
 }
 #formacao h2{
-	padding:0 0px 10px;
+	align-content: center;
+	text-align: center;
+	padding:0 0px 15px;
 }
-#formacao .imagen-cert {
-	width: 85%;
-	display:grid;
+
+#formacao .carousel-inner{
+	margin-left: 5%;
+	
+	width: 90%;
+	align-items: center;
+	
+	align-content: center;
+}
+.carousel-control-prev-icon{
+	
+	color: var(--background-color);
+	
 	
 }
-#formacao .imagen-cert:hover {
-	width: 100%;
-	display:grid;
+.carousel-control-next-icon{
 	
+    
+	color:var(--background-color)
+   
 }
+ 
 /* fim formacao*/
 
 
@@ -607,6 +636,9 @@ p {
 }
 #contato .contato-items{
 	background-color:var(--contato-color);
+}
+#contato .section-title{
+	padding: 0px 0px 60px 0px;
 }
 #contato .section-title,h1{ 
 	                             
@@ -1022,17 +1054,7 @@ p {
 	}
 	/* fim header */
 
-	#formacao .imagen-cert img {
-		width: 35%;
-		display:flex;
-		margin-left: 32%;
-		
-	}
-	#formacao .imagen-cert img:hover {
-		width: 45%;
-		display:grid;
-		margin-left: 27%;
-	}
+	
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
@@ -1092,6 +1114,15 @@ p {
 
 	font-size:medium;
 }
+#formacao .container-fluid{
+	width: 100%;
+	max-width: 100%;
+	background-color: var(--background-color);
+	flex-direction: column;
+	text-align: center;
+	display: flex;
+    align-content: center;
+}
 #formacao h1{
 	margin-top: 25%;
 	padding: 0 10px 20px 10px;
@@ -1144,18 +1175,20 @@ p {
 		font-size: medium ;
 	}
 	/* sessao formacao*/
-   #formacao .container{
-	
+   
+   #formacao .container-fluid{
+	width: 100%;
 	max-width: 100%;
 	background-color: var(--background-color);
-	flex-direction:column;
-	position: relative;
-	
-    
-   }
+	flex-direction: column;
+	text-align: center;
+	display: flex;
+    align-content: center;
+}
    #formacao h1{
-	margin-top: 25%;
-	padding: 0 10px 40px 10px;
+	
+	margin-top: 30%;
+	padding: 0 10px 90px 10px;
 	color:var(--secundary-color)
    }
    #formacao h2{
@@ -1173,7 +1206,7 @@ p {
    }
    /* fim formacao*/
    #contato h1{
-	margin-top: 40%;
+	margin-top: 50%;
    }
    #contato .contato-item .icon{
 	margin-top:70px;
