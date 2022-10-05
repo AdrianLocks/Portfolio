@@ -2,7 +2,7 @@
 
 /* comeco estilizacao geral */
 
-:root {
+body.dark {
 	--background-color: white; /* variavel para usar nas alteracoes */
 	--primary-color:crimson;
 	--secundary-color:black;
@@ -11,7 +11,7 @@
 	--sobre-paragrafo:rgb(93, 90, 90);
 }
 
-body.dark{
+:root {
 	--background-color: black; /* variaveis para  alteracao de cores */
 	--primary-color:#5ee543;
 	--secundary-color:white;
