@@ -593,6 +593,10 @@ p {
 	display: flex;
     align-content: center;
 }
+#formacao .container-fluid p{
+	font-weight: 400;
+	color:var(--secundary-color)
+}
 #formacao h1{
 	align-content: center;
 	text-align: center;
