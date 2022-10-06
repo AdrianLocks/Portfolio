@@ -13,13 +13,13 @@ body.dark{
 }
 
 :root {
+	--certificado-color:#006400;
 	--background-color: black; /* variaveis para  alteracao de cores */
 	--primary-color:#5ee543;
 	--secundary-color:white;
 	--contato-color: rgba(5, 4, 4, 0.24);
 	--contato-boxshadow:white;
 	--sobre-paragrafo:rgb(255, 255, 255);
-	--certificado-color:#006400;
 }
 
 
