@@ -2,7 +2,7 @@
 
 /* comeco estilizacao geral */
 
-body.dark {
+body.dark{
 	--background-color: white; /* variavel para usar nas alteracoes */
 	--primary-color:crimson;
 	--secundary-color:black;
@@ -612,6 +612,13 @@ p {
 	
 	align-content: center;
 }
+#formacao .carousel-inner p{
+	font-weight: 800;
+	font-size: large;
+	font-style: normal;
+	font-family: 'Times New Roman', Times, serif;
+   color:var(--primary-color);
+}	
 .carousel-control-prev-icon{
 	
 	color: var(--background-color);
@@ -1175,7 +1182,7 @@ p {
 		font-size: medium ;
 	}
 	/* sessao formacao*/
-   
+	
    #formacao .container-fluid{
 	width: 100%;
 	max-width: 100%;
@@ -1184,7 +1191,7 @@ p {
 	text-align: center;
 	display: flex;
     align-content: center;
-}
+   }
    #formacao h1{
 	
 	margin-top: 30%;
