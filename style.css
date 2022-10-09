@@ -640,6 +640,39 @@ p {
  
 /* fim formacao*/
 
+/* competencias */
+
+.competencias h1{
+	    align-content: center;
+	    align-items: center;
+		font-size: 50px;
+		font-family: 'Montserrat',sans-serif;
+		scroll-behavior: smooth;
+		font-family: 'Montserrat',sans-serif;
+		text-decoration:var(--primary-color);
+	
+}
+.competencias span{
+	color:var(--primary-color)
+}
+.competencias .progress{
+	
+	font-size: small;
+	margin-top: 0%;
+	height: 18px;
+	background-color:var(--sobre-paragrafo);
+}
+.competencias h5{
+	
+	box-sizing: border-box;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	
+	color:var(--secundary-color);
+}
+/* FIM COMPETENCIAS*/
+
 
 /* sessao contato */
 #contato h1{
@@ -1141,6 +1174,13 @@ p {
 	padding: 0 10px 20px 10px;
 	color:var(--secundary-color)
    }
+
+   .competencias h1{
+	align-items: center;
+	align-content: center;
+	font-size: xx-large;
+  }
+
    #contato h1{
 	margin-top: 40%;
    }
@@ -1218,6 +1258,13 @@ p {
 	
    }
    /* fim formacao*/
+
+   .competencias h1{
+	 align-items: center;
+	 align-content: center;
+	 font-size:400%;
+   }
+
    #contato h1{
 	margin-top: 50%;
    }
