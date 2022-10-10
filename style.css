@@ -3,6 +3,7 @@
 /* comeco estilizacao geral */
 
 body.dark{
+	--sub-menu-color: #29323c;
 	--background-color: white; /* variavel para usar nas alteracoes */
 	--primary-color:crimson;
 	--secundary-color:black;
@@ -13,6 +14,7 @@ body.dark{
 }
 
 :root {
+	--sub-menu-color:#fff;
 	--certificado-color:#006400;
 	--background-color: black; /* variaveis para  alteracao de cores */
 	--primary-color:#5ee543;
@@ -78,16 +80,20 @@ h1 {
 	font-family: 'Montserrat',sans-serif;
 }
 a {
+	
 	text-decoration:var(--primary-color);
 }
+
 .container {
 	
+  
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 img {
 	height: 100%;
 	width: 100%;
@@ -163,7 +169,7 @@ p {
 
 /* sessao do cabecalho*/
 #header {
-
+  
 	position: fixed;
 	z-index: 1000;
 	left: 0;
@@ -172,11 +178,13 @@ p {
 	height: auto;
 }
 #header .header {
+	
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
+	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -194,16 +202,101 @@ p {
 	left: 100%;
 	top: 0;
 	display: flex;
-	flex-direction: column;
+	flex-direction:column;
 	justify-content: center;
 	align-items: center;
-	z-index: 1;
-	overflow-x: hidden;
+	
+	overflow-x:hidden;
 	transition: 0.5s ease left;
 }
+#header .nav-list ul li{
+	
+ display: inline-block;
+ position: relative;
+ 
+}
+
+
+
+/* sub menu */
+
+#header .nav-list ul li ul{
+	
+    margin-top: 0%;
+	display:table-column;
+    align-items: left;
+	align-content: left;
+
+	
+}
+#header .nav-list ul li {
+    display:flex;
+	padding-top:0%;
+	align-items: left;
+	align-content: left;
+}
+#header .nav-list ul li .forma:hover {
+   display: flex;
+    margin-top:0%;
+	align-items: left;
+	align-content: left;
+}
+#header .nav-list ul li:hover ul{
+	
+	padding-top: 0%;
+	margin: 0;
+	position: relative;
+	margin-top: 0%;
+   display: table;
+   left:0;
+   align-items: left;
+   align-content: left;
+ 
+
+}
+#header .nav-list ul ul li:hover{
+	
+	background-color:#fff;
+	border:1px solid black;
+	
+	
+	display:flex;
+   
+
+}
+
+#header .nav-list ul li:hover ul li{
+	display: flex;
+	position: relative;
+	
+   left:0;
+   align-items: left;
+   align-content: left;
+}
+/* fim submenu*/
+
+
+
+
 #header .nav-list ul.active {
 	left: 0%;
 }
+
+/*
+#header .nav-list ul li ul{  /*---sub menu- mobile----*/
+/*	display:flex;
+	scroll-behavior: 3;    
+	
+	
+}
+#header .nav-list ul li::after{  /*---sub menu- mobile----*/
+/*	display:none;
+	scroll-behavior: 3;
+	
+	
+}
+--*/
+
 #header .nav-list ul a {
 	font-size: 2.5rem;
 	font-weight: 500;
@@ -214,6 +307,7 @@ p {
 	padding: 20px;
 	display: block;
 }
+
 #header .nav-list ul a::after {
 	content: attr(data-after);
 	position: absolute;
@@ -580,11 +674,49 @@ p {
 }
 /* fim da sessao sobre */
 
-/* sessao formacao*/
-#formacao{
+/* sessao  formacao-cursos*/
+
+.btn-group {
+	z-index: 1;
+	left: 399px;
+	top:-30px;
+	position: relative;
+	background-color: var(--primary-color);
+	background-image: var(--primary-color);
+	padding: 5px 5px 5px 5px;
+	
+	align-items: center;
+	align-content: center;
+	width: 140px;
+	height: 35px;
+}
+.btn-group .dropdown-menu{
+	border-radius: 5%;
+	border:1px solid var(--secundary-color);
+	background:var(--sub-menu-color);
+	height: 6vh;  /* tamanho sun-menu */
+}
+.dropdown-menu a{
+	border-radius: 5%;
+	font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+	background-color:var(--background-color);
+	color:var(--secundary-color);
+	display: flex;
+	align-items: center;
+	align-content: center;
+	font-size: small;
+    opacity: 2;
+	border:1px solid var(--secundary-color);
+}
+.dropdown-menu a:hover{
+   color:var(--background-color);
+   background-color: var(--primary-color);
+}
+#cursos{
 	background-color: var(--background-color);
 }
-#formacao .container-fluid{
+#cursos .container-fluid{
 	width: 50%;
 	max-width: 100%;
 	background-color: var(--background-color);
@@ -593,24 +725,24 @@ p {
 	display: flex;
     align-content: center;
 }
-#formacao .container-fluid p{
+#cursos .container-fluid p{
 	font-weight: 400;
 	color:var(--secundary-color)
 }
-#formacao h1{
+#cursos h1{
 	align-content: center;
 	text-align: center;
-	margin-top: 15%;
+	margin-top: 10%;
 	padding: 0 10px 40px 10px;
 	color:var(--secundary-color)
 }
-#formacao h2{
+#cursos h2{
 	align-content: center;
 	text-align: center;
 	padding:0 0px 15px;
 }
 
-#formacao .carousel-inner{
+#cursos .carousel-inner{
 	margin-left: 5%;
 	
 	width: 90%;
@@ -618,7 +750,7 @@ p {
 	
 	align-content: center;
 }
-#formacao .carousel-inner p{
+#cursos .carousel-inner p{
 	font-weight: 800;
 	font-size: large;
 	font-style: normal;
@@ -638,11 +770,17 @@ p {
    
 }
  
-/* fim formacao*/
+/* fim sessao cursos*/
 
 /* competencias */
-
+.competencias{
+	
+	margin-bottom: 30%;
+	margin-top:30%;
+	
+}
 .competencias h1{
+	    
 	    align-content: center;
 	    align-items: center;
 		font-size: 50px;
@@ -1160,7 +1298,37 @@ p {
 
 	font-size:medium;
 }
-#formacao .container-fluid{
+.btn-group {
+	z-index: 1;
+	left: 100px;
+	top:-20px;
+	position: relative;
+	background-color: var(--primary-color);
+	background-image: var(--primary-color);
+	padding: 5px 5px 5px 5px;
+	margin: 0;
+	align-items: center;
+	align-content: center;
+	width: 140px;
+	height: 35px;
+}
+.btn-group .dropdown-menu{
+	border-radius: 5%;
+	border:1px solid var(--secundary-color);
+	background:var(--sub-menu-color);
+	height: 8.5vh;  /* tamanho sun-menu */
+}
+.dropdown-menu a{
+	border-radius: 5%;
+	font-weight: 500;
+	font-family: 'Montserrat',sans-serif;
+	background-color:var(--background-color);
+}
+.dropdown-menu a:hover{
+	color:var(--background-color);
+	background-color: var(--primary-color);
+ }
+#cursos .container-fluid{
 	width: 100%;
 	max-width: 100%;
 	background-color: var(--background-color);
@@ -1169,12 +1337,17 @@ p {
 	display: flex;
     align-content: center;
 }
-#formacao h1{
+#cursos h1{
 	margin-top: 25%;
 	padding: 0 10px 20px 10px;
 	color:var(--secundary-color)
    }
-
+   .competencias{
+	
+	margin-bottom: 30%;
+	margin-top:40%;
+	
+   }
    .competencias h1{
 	align-items: center;
 	align-content: center;
@@ -1227,9 +1400,40 @@ p {
 
 		font-size: medium ;
 	}
-	/* sessao formacao*/
+	/* sessao cursos*/
+	.btn-group {
+		
+		z-index: 1;
+		left: 129px;
+		top:-30px;
+	    position: relative;
+		background-color: var(--primary-color);
+		background-image: var(--primary-color);
+		padding: 5px 5px 5px 5px;
+		margin: 0;
+		align-items: center;
+		align-content: center;
+		width: 140px;
+		height: 35px;
+	}
 	
-   #formacao .container-fluid{
+	.btn-group .dropdown-menu{
+	    border-radius: 5%;
+		border:1px solid var(--secundary-color);
+		background: var(--sub-menu-color);
+		height: 6vh;  /* tamanho sun-menu */
+	}
+	.dropdown-menu a{
+		font-weight: 500;
+		font-family: 'Montserrat',sans-serif;
+		border-radius: 5%;
+		background-color:var(--background-color);
+	}
+	.dropdown-menu a:hover{
+		color:var(--background-color);
+		background-color: var(--primary-color);
+	 }
+   #cursos .container-fluid{
 	width: 100%;
 	max-width: 100%;
 	background-color: var(--background-color);
@@ -1238,28 +1442,34 @@ p {
 	display: flex;
     align-content: center;
    }
-   #formacao h1{
+   #cursos h1{
 	
 	margin-top: 30%;
 	padding: 0 10px 90px 10px;
 	color:var(--secundary-color)
    }
-   #formacao h2{
+   #cursos h2{
 	padding:0 0px 10px;
    }
-   #formacao .imagen-cert {
+   #cursos .imagen-cert {
 	width: 85%;
 	display:grid;
 	
    }
-   #formacao .imagen-cert:hover {
+   #cursos .imagen-cert:hover {
 	width: 100%;
 	display:grid;
 	
    }
    /* fim formacao*/
-
+   .competencias{
+	
+	margin-bottom: 50%;
+	margin-top:40%;
+	
+   }
    .competencias h1{
+	
 	 align-items: center;
 	 align-content: center;
 	 font-size:400%;
