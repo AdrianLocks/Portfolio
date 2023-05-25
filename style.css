@@ -2,6 +2,15 @@
 
 /* comeco estilizacao geral */
 
+.scrollToTop{ 
+	font-size:medium;  
+    position:fixed;
+    top:880px; 
+    right:40px;
+    display:none;
+	color:var(--primary-color);
+}
+
 body.dark{
 	--sub-menu-color: #29323c;
 	--background-color: white; /* variavel para usar nas alteracoes */
