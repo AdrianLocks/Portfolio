@@ -441,6 +441,10 @@
         </div>
       </div>
       <p>Copyright © 2023 Adrian c. Locks</p>  <br/> <p>todos os direitos reservados</p>
+      <div> 
+      <a href="#" class="scrollToTop">Voltar
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </div>
   </section>
   <!-- Fim Footer -->
@@ -480,6 +484,28 @@
       $(function () {
         $('.dropdown-toggle').dropdown();
       }); 
+  </script>
+    
+   <!--jquery voltar ao topo-->
+  <script>
+    $(document).ready(function(){
+
+      //Verifica se a Janela está no topo
+      $(window).scroll(function(){
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+  
+      //Onde a mágia acontece! rs
+      $('.scrollToTop').click(function(){
+          $('html, body').animate({scrollTop : 0},800);
+          return false;
+      });
+  
+  });
   </script>
   
 </body>
