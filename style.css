@@ -6,7 +6,7 @@
 	font-size:medium;  
     position:fixed;
     top:880px; 
-    right:40px;
+    right:5px;
     display:none;
 	color:var(--primary-color);
 }
