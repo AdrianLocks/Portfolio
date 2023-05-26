@@ -1218,7 +1218,12 @@ p {
 		margin-top: -30px;
 		float:right;
 	} */
-     
+        .btn-group{
+		position:relative;
+		margin-left: -15px;
+		align-items: center;
+		display: flex;
+	}
 	#principal .social-inicio{
 	
 		margin-top:-50px;
@@ -1497,3 +1502,13 @@ p {
 	 margin-top:10px;
    }
 }
+
+@media  screen and (min-width: 710px) and (max-width:1100px){   /*--tab s4--*/
+
+	.btn-group{
+		position:relative;
+		margin-left: -300px;
+		align-items: center;
+		display: flex;
+	}
+	}
