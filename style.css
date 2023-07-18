@@ -2,11 +2,19 @@
 
 /* comeco estilizacao geral */
 
+.fa-solid {
+	opacity:80% ;
+	left: 10px;
+	float: left;
+	font-size:x-large;
+}
 .scrollToTop{ 
+	float: left;
+	left:10px;
 	font-size:medium;  
     position:fixed;
     top:880px; 
-    right:5px;
+    
     display:none;
 	color:var(--primary-color);
 }
