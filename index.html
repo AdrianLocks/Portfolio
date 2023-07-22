@@ -406,30 +406,57 @@
           <div class="contato-info">
             <h1>Deixe seu contato!</h1>
           
-            <div class="row">         <!--formulario com bootstrap-->
-              <div class="col-md-4">
-                <form data-toggle="validator" role="form" id="myForm" name="myForm" action="contato portfolio" method="POST">
-                    <div class="form-group">
-                      <label for="inputName" class="control-label">Nome:</label>
-                      <input type="text" class="form-control" id="inputName" placeholder="nome" required>
-                    <div class="help-block with-errors"></div>
-                    </div>        
-                    <div class="form-group">
-                      <label for="inputFone" class="control-label">Telefone:</label>
-                      <input type="text" class="form-control" id="inputFone" placeholder="(XX) XXXXXXXXX" pattern="[0-9]{11}$" required>
-                    <div class="help-block with-errors"></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+             <!--formulario com bootstrap-->
+                                                 
+              <div class="row">        
+                <div class="col-md-4">
+                
+                <?php
+                 if(isset($_SESSION['msg'])){
+                    echo ($_SESSION['msg']);
+                    unset($_SESSION['msg']);
+                 }
+                 ?>         <!--processa.php--><!--no action! para conexao com o BD ,arquivo ja esta ja pasta do projeto-->
+                 
+                  <form data-toggle="validator" role="form" id="portfolioform"  action="https://formsubmit.co/adrianlocks2013@gmail.com" method="POST" >
+                      
+                      <div class="form-group">
+                        <label  for="inputName" class="control-label">nome:</label>
+                        <input name="nome_usuario" type="text" class="form-control" id="inputName" placeholder="nome" required>
+                      <div class="help-block with-errors"></div>
+                      <div class="form-group">
+                        <label  for="inputEmail" class="control-label">email:</label>
+                        <input name="email_usuario" type="email" class="form-control" id="inputName" placeholder="email" required>
+                      <div class="help-block with-errors"></div>
+                      </div>        
+                      <div class="form-group">
+                        <label for="inputFone" class="control-label">telefone:</label>
+                        <input name="telefone_usuario" type="text" class="form-control" id="inputFone" placeholder="(XX) XXXXXXXXX" pattern="[0-9]{11}$" required>
+                      <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputMensagem"  class="control-label">Mensagem:</label>
+                        
+                        <textarea  name="mensagem_usuario" class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                      
+                      <input type="hidden" name="_next" value="https://adrianlocks.github.io/Portfolio/thanks.html">
+                      <input type="hidden" name="_autoresponse" value="Obrigado! Em breve entrarei em contato!">
+                      
+                      <button type="submit" value="enviar" class="btn btn-primary">Enviar</button>
+                  </form>
+                
+                </div>
+                <div class="col-md-4"></div>
               </div>
-              <div class="col-md-4"></div>
-            </div>
-
+           
             <h2>Seus dados estão seguros!</h2>
           </div>
         </div>
       </div>
     </div>
+   
+       
     
   </section>
   <!-- Fim da sessao contato -->
