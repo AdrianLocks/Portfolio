@@ -497,6 +497,29 @@
   <script style="text/javascript" src="bootstrap.min.js" ></script>
   <script style="text/javascript" src="bootstrap.js" ></script>
 
+                       <!--wpa script-->
+                                                       
+                 <script>
+// This is the service worker with the Cache-first network
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+ if (navigator.serviceWorker.controller) {
+   console.log("[PWA Builder] active service worker found, no need to register");
+ } else {
+ // Register the service worker
+   navigator.serviceWorker
+     .register("pwabuilder-sw.js", {
+      scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+        });
+      }
+}
+</script>
+  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
   <script>
