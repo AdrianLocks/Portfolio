@@ -2,23 +2,6 @@
 
 /* comeco estilizacao geral */
 
-.fa-solid {
-	opacity:80% ;
-	left: 10px;
-	float: left;
-	font-size:x-large;
-}
-.scrollToTop{ 
-	float: left;
-	left:10px;
-	font-size:medium;  
-    position:fixed;
-    top:880px; 
-    
-    display:none;
-	color:var(--primary-color);
-}
-
 body.dark{
 	--sub-menu-color: #29323c;
 	--background-color: white; /* variavel para usar nas alteracoes */
@@ -40,6 +23,26 @@ body.dark{
 	--contato-boxshadow:white;
 	--sobre-paragrafo:rgb(255, 255, 255);
 }
+
+.fa-solid {
+	opacity:80%;
+	left: 10px;
+	float: left;
+	font-size:x-large;
+}
+.scrollToTop{ 
+	float: left;
+	left:10px;
+	font-size:medium;  
+    position:fixed;
+    top:880px; 
+    
+    display:none;
+	color:var(--primary-color);
+}
+
+
+
 
 
 /*.form-switch{
@@ -933,7 +936,12 @@ p {
 	flex-direction: column;
 	
 }
-
+#contato .contato-item  .form-group-text{
+	
+	color:var(--secundary-color);
+	
+	
+}
 	
 /*fim da sessao contato */
 
@@ -1027,7 +1035,7 @@ p {
 @media only screen and (min-width: 768px) {
 
 	
-
+    
 	
 	.mudaCor{
 		 
@@ -1226,7 +1234,7 @@ p {
 		margin-top: -30px;
 		float:right;
 	} */
-        .btn-group{
+    .btn-group{
 		position:relative;
 		margin-left: -15px;
 		align-items: center;
@@ -1301,7 +1309,27 @@ p {
 
 /* responsividades elementos gerais-celulares---------------------------------------------------- */
 
-@media  screen and (min-width: 360px) and (max-width:600px){
+	
+@media  screen and (min-width: 360px) and (max-width:640px){
+
+	.fa-solid {
+		top:880px;
+		opacity:80% ;
+		left: 10px;
+		float: left;
+		font-size:x-large;
+	}
+	.scrollToTop{ 
+		float: left;
+		left:10px;
+		font-size:medium;  
+		position:fixed;
+		top:610px; 
+		
+		display:none;
+		color:var(--primary-color);
+	}
+   
 
 	#contato .contato-item button{
 		max-width:30%;   /*--*/
@@ -1394,6 +1422,24 @@ p {
 }
 
 @media  screen and (min-width: 400px) and (max-width:600px){
+
+	.fa-solid {
+		top:880px;
+		opacity:80% ;
+		left: 10px;
+		float: left;
+		font-size:x-large;
+	}
+	.scrollToTop{ 
+		float: left;
+		left:10px;
+		font-size:medium;  
+		position:fixed;
+		top:880px; 
+		
+		display:none;
+		color:var(--primary-color);
+	}
     #projeto .projeto-item {
 		border:50%;
 		width:280px;
@@ -1511,9 +1557,9 @@ p {
    }
 }
 
-
 @media  screen and (min-width: 710px) and (max-width:1100px){   /*--tab s4--*/
-
+    
+	
 	.btn-group{
 		position:relative;
 		margin-left: -300px;
@@ -1521,12 +1567,29 @@ p {
 		display: flex;
 	}
 }
-@media  screen and (min-width: 390px) and (max-width:400px){  /*iphone 12 pro */
-
-		.btn-group{
-			position:relative;
-			margin-left: 15px;
-			align-items: center;
-			display: flex;
-		}
-}
+	
+    
+@media  screen and (min-width: 375px) and (max-width:960px){  /*iphone x / 12 pro  */
+    .fa-solid {
+        top:880px;
+        opacity:80% ;
+    	left: 10px;
+    	float: left;
+    	font-size:x-large;
+    }
+    .scrollToTop{ 
+    	float: left;
+    	left:10px;
+    	font-size:medium;  
+    	position:fixed;
+    	top:780px; 
+    	display:none;
+    	color:var(--primary-color);
+    }
+    .btn-group{
+    	position:relative;
+    	margin-left: 15px;
+    	align-items: center;
+    	display: flex;
+    }
+}        
