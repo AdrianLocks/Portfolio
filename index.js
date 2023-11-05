@@ -1,6 +1,6 @@
-const $html = document.querySelector('html')
-const $checkbox = document.querySelector('#flexSwitchCheckDefault')
+const $body = document.querySelector('html')
+const $checked = document.querySelector('#flexSwitchCheckDefault')
 
-$checkbox.addEventListener('change',function(){      /* evento checkbox mudar as cores */
-    $html.classList.toggle('ligth')
+$checked.addEventListener('change',function(){    /* evento checkbox mudar as cores */
+    $html.classList.toggle('dark')
 })

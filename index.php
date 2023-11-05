@@ -1,5 +1,5 @@
 <?php
-include_once "conexao.php";
+include_once "conexao.php";     
 session_start();
 ?>
 
@@ -7,21 +7,24 @@ session_start();
 <html lang="pt-br" class="">
 
 <head>
-  <link rel="canonical" href="https://portfolio.devlocks.net.br/">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="portfolio iOS">
-  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
-  <link rel="manifest" href="manifest.json" /> 
  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Portfólio iOS">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <link rel="manifest" href="manifest.json" /> 
+  <link rel="canonical" href="https://portfolio.devlocks.net.br/#principal">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">   
   <link rel="stylesheet" href="style.css"> <!--referencia ao arquivo css e acima referencia ao bootstrap-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-  
+  <link rel="icon" href="images/icons/icon12.png">
   <link rel="stylesheet" href="day-night.css">
 
   
@@ -29,7 +32,26 @@ session_start();
 </head>
 
 <body>
-    
+<script>
+// This is the service worker with the Cache-first network
+// Add this below content to your HTML page, or add the js file to your page at the very top to 
+register service worker
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+ if (navigator.serviceWorker.controller) {
+ console.log("[PWA Builder] active service worker found, no need to register");
+ } else {
+ // Register the service worker
+ navigator.serviceWorker
+ .register("pwabuilder-sw.js", {
+ scope: "./"
+ })
+ .then(function (reg) {
+ console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+ });
+ }
+}
+</script>    
                  
 
   <!-- cabecalho -->
@@ -65,7 +87,7 @@ session_start();
             
             </li>
 
-            <li><a href="#contato" data-after="Contato">Contato</a></li>
+            <li><a href="#contato" data-after="Contato">Contatos</a></li>
             
            
           </ul>
@@ -116,7 +138,7 @@ session_start();
 
     <div class="social-inicio">  <!--bloco para as midias sociais-->
       <ul>
-        <li><a href="https://www.facebook.com/adrianlocks2012" target="_blank" title="Facebook"><i class="fa-brands fa-facebook" alt="facebook"></i></a></li>
+        <li><a href="https://instagram.com/adrian.locks?utm_source=qr&igshid=OGIxMTE0OTdkZA=" target="_blank" title="Instagram"><i class="fa-brands fa-instagram" alt="instagram"></i></a></li>
         <li><a href="https://wa.me/+55048984079002" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp" alt="whatsapp"></i></a></li>
         <li><a href="https://www.linkedin.com/in/adrian-cristopher-locks-1b3178206/" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin" alt="linkedin"></i></a></li>
         <li><a href="https://github.com/AdrianLocks" target="_blank" title="Github"><i class="fa-brands fa-github" alt="github" ></i></a></li>
@@ -135,7 +157,10 @@ session_start();
       <div class="projeto-header">
         <h1 class="section-title">Projetos <span>Recentes</span></h1>
       </div>
-      <div class="todos-projeto">   <!--projetos criados e em andamentos, links-->
+      <div class="todos-projeto"> 
+      
+      <!--projetos criados e em andamentos, links-->
+      
         <div class="projeto-item">
           <div class="projeto-info">
             <h1>Projeto 1</h1>
@@ -148,6 +173,7 @@ session_start();
             <img src="./img/img-11.jpg" alt="imagem">
           </div>
         </div>
+        
         <div class="projeto-item">
           <div class="projeto-info">
             <h1>Projeto 2</h1> 
@@ -161,6 +187,7 @@ session_start();
             <img src="./img/img-20.jpg" alt="img">
           </div>
         </div>
+        
         <div class="projeto-item">
           <div class="projeto-info">
             <h1>Projeto 3</h1> 
@@ -171,9 +198,24 @@ session_start();
             </p>
           </div>
           <div class="projeto-img">
-            <img src="./img/devlocks10.png" alt="img">
+            <img src="./img/devlocks10.png" style=" max-width:100%;max-height:100%;" alt="img">
           </div>
         </div>
+        
+        <div class="projeto-item">
+          <div class="projeto-info">
+            <h1>Projeto 4</h1> 
+            <h2>Liga Regional De Futebol 7</h2>  
+            <p>
+
+              <a href="https://ligaregionaldefutebol7.com.br/">Site da Liga Regional De Futebol 7 Palhoça/SC! Clique e conheça! Projeto em andamento!</a>
+            </p>
+          </div>
+          <div class="projeto-img">
+            <img src="./img/LRF7-.png" alt="img">
+          </div>
+        </div>
+        
         </div>
       </div>
     </div> 
@@ -190,19 +232,27 @@ session_start();
       </div>
       <div class="col-right">
         <h1 class="section-title">Sobre <span>Min</span></h1>
-        <h2>Área de Ti em geral!</h2>
-        <p>   Procurando oportunidades na área de tecnologia, ótima  resolução de problemas, aprendizado rápido, esforçado e dedicado no que faz, trabalhei com logística á mais de 15 anos, cursando superior em tecnologia com término em 12/2023.</p>
-        <p>*Apresentação em Video!<br/><span> - Linkedin -</span><a href="https://www.linkedin.com/posts/adrian-cristopher-locks-1b3178206_breve-apresenta%C3%A7%C3%A3o-activity-7082115900354568192-C7ka?utm_source=share&utm_medium=member_desktop" target="_blank" title="Clique aqui!">  Link apresentação! </a> <br/></p>      
+        <h2>● Interesses principalmente em áreas da Tecnologia da informação, Desenvolvimento web, Informática...</h2>
+        <p> • Procurando oportunidades para ingressar nessa nova jornada!</P>
+        <p> ● Interesses em: Desenvolvimento Front-End, Desenvolvimento com WordPress, Banco De Dados, WebDesign, Marketing Digital, Email Marketing, Suporte Técnico, Infraestrutura de Redes, Assistente de E-Commerce, Assistente de Ti, Auxiliar de Ti, Montagem e Manutenção de Computadores, Informática em Geral, Etc... </p>
+        <p> • Ótima resolução de problemas, com aprendizado rápido e intuitivo, esforçado e dedicado no que faz, trabalho com logística a mais de 15 anos, pois a necessidade falou mais alto, mas sempre fui amante de tecnologia desde criança! Cursando superior em tecnologia (ADS) com término em 12/2023.</p>
+            
         <h2>Formação e Cursos:</h2>
         <div class="span-facul">
-          <p>*Tecnólogo em Análise e Desenvolvimento de Sistemas<span> - Uninter</span><a href="img/uninter.jpeg" target="_blank" title="Clique aqui!"> Link Carteira Estudantil!</a> <br/>
-            *Programa por dentro do mercado de TI-A influência do chatGpt e outras IAs no mercado de trabalho em TI<br;><span> -Uninter-</span><a href="certificadoChatGpt.pdf" target="_blank" title="Clique aqui!"> Link Certificado!</a> <br/>
-          </p>
+        <p>☑ Tecnólogo em Análise e Desenvolvimento de Sistemas<span> - Uninter</span><a href="img/uninter.jpeg" target="_blank" title="Clique aqui!"> Link Carteira Estudantil!</a> <br/></p>
+        </p>
+        <p>☑ Declaração de Matrícula e Carga Horária Graduação<br;><span> -Uninter-</span><a href="DeclaraçãoMatrícula.pdf" target="_blank" title="Clique aqui!"> Link PDF!</a> <br/></p>
+           
+        <p>☑ Histórico Escolar Graduação e Formação Pedagógica<br;><span> -Uninter-</span><a href="HistóricoGraduação.pdf" target="_blank" title="Clique aqui!"> Link PDF!</a> <br/></p>
+         
+        <p>☑ Programa por dentro do mercado de TI-A influência do chatGpt e outras IAs no mercado de trabalho em TI<br;><span> -Uninter-</span><a href="certificadoChatGpt.pdf" target="_blank" title="Clique aqui!"> Link Certificado!</a> <br/></p>
+        </div>
+        <p>☑ Programando e jogando!<br;><span> -Uninter-</span><a href="Programando e jogando!.pdf" target="_blank" title="Clique aqui!"> Link Certificado!</a> <br/></p>
         </div>
         <div class="span-cursos">
           <p>
-          *Certificado de Autoridade: HTML <br/><span> - DevMedia -</span><a href="https://www.devmedia.com.br/certificado/tecnologia/html/adrian-cristopher-locks" target="_blank" title="Clique aqui!">  Link Certificado!</a> <br/>
-          *Programador Front-end: introdução<br/><span> - DevMedia -</span><a href="https://www.devmedia.com.br/certificado/tecnologia/programacao/adrian-cristopher-locks" target="_blank" title="Clique aqui!">  Link Certificado! </a> <br/>
+          ☑ Certificado de Autoridade: HTML <br/><span> - DevMedia -</span><a href="https://www.devmedia.com.br/certificado/tecnologia/html/adrian-cristopher-locks" target="_blank" title="Clique aqui!">  Link Certificado!</a> <br/>
+          ☑ Programador Front-end: introdução<br/><span> - DevMedia -</span><a href="https://www.devmedia.com.br/certificado/tecnologia/programacao/adrian-cristopher-locks" target="_blank" title="Clique aqui!">  Link Certificado! </a> <br/>
           
           </p>
         </div>
@@ -230,13 +280,13 @@ session_start();
           </button>
           <ul class="dropdown-menu">
             <!-- Dropdown menu links -->
-            <a href="#cursos">Certificados</a>
-            <a href="#competencias">Competencias</a>
+            <a href="#cursos">☑ Certificados</a>
+            <a href="#competencias">☑ Competencias</a>
           </ul>
         </div>
         
         
-        <h2> Certificados:</h2>
+        <h2> ☑ Certificados:</h2>
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -247,6 +297,7 @@ session_start();
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
@@ -299,10 +350,17 @@ session_start();
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./img/certificado8.jpg" class="d-block w-100" alt="certificado2" onclick="window.open(this.src)">
+              <img src="./img/certificado8.jpg" class="d-block w-100" alt="certificado8" onclick="window.open(this.src)">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Slide 8</h5>
                 <p>Microsoft excel 2016-Básico</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Programando e jogando.png" class="d-block w-100" alt="certificado9" onclick="window.open(this.src)">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 9</h5>
+                <p>Programando e jogando!</p>
               </div>
             </div>
           </div>
@@ -323,29 +381,49 @@ session_start();
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
         </div><br/>
-        <h5>CSS</h5>
+        <h5>CSS E RESPONSIVIDADES EM GERAL</h5>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
         </div><br/>
         <h5>JAVASCRIPT</h5>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+        </div><br/>
+        <h5>JAVA/KOTLIN/ANDROID STUDIO</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
         </div><br/>
         <h5>PYTHON</h5>
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
         </div><br/>
+        <h5>LINGUAGEM SQL(SGBDs)</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+        </div><br/>
         <h5>FRAMEWORKS WEB</h5>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%">55%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
         </div><br/>
-        <h5>EDITOR DE IMAGENS</h5>
+        <h5>DESIGN GRÁFICO</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+        </div><br/>
+        <h5>DESENVOLVIMENTO COM WORDPRESS</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+        </div><br/>
+        <h5>MONTAGEM E MANUTENÇÃO(PC, MOBILE)</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+        </div><br/>
+        <h5>MARKETING DIGITAL, SOCIA MEDIA, SEO</h5>
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
         </div><br/>
-        <h5>WORDPRESS</h5>
+        <h5>INFRAESTRUTURA DE REDES</h5>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">65%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
         </div><br/>
         <p>Em Desenvolvimento!</p>
       </div>
@@ -475,7 +553,7 @@ session_start();
       <div class="brand">
         <h1><span>A</span>dr<span>ian</span> C. <span>Lo</span>cks</h1>
       </div>
-      <h2>Midias Sociais:</h2>
+      <h2>Midias Sociais e Site:</h2>
       <div class="social-icon">  <!--bloco para as midias sociais-->
         <div class="social-item">
           <a href="https://www.facebook.com/adrianlocks2012" target="_blank" title="Facebook"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
@@ -490,6 +568,9 @@ session_start();
         </div>
         <div class="social-item">
           <a href="https://github.com/AdrianLocks" target="_blank" title="Github"><img src="https://img.icons8.com/bubbles/100/000000/github.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://devlocks.net.br/" target="_blank" title="DevLocks"><img src="https://img.icons8.com/bubbles/100/000000/web.png" /></a>
         </div>
       </div>
       <p>Copyright © 2023 Adrian c. Locks</p>  <br/> <p>todos os direitos reservados</p>
@@ -523,33 +604,6 @@ session_start();
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
   
-  
-  
-  
-                                                       <!--wpa script-->
-                                                       
-                 <script>
-// This is the service worker with the Cache-first network
-// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-// Check compatibility for the browser we're running this in
-if ("serviceWorker" in navigator) {
- if (navigator.serviceWorker.controller) {
-   console.log("[PWA Builder] active service worker found, no need to register");
- } else {
- // Register the service worker
-   navigator.serviceWorker
-     .register("pwabuilder-sw.js", {
-      scope: "./"
-      })
-      .then(function (reg) {
-        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-        });
-      }
-}
-</script>
-
-
-
   
   <script src="./day-night.js"></script>
   <script src="./index.js"></script>

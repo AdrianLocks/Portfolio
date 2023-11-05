@@ -1,7 +1,7 @@
 <?php
     $servidor = "mysql.hostinger.com.br";
     $usuario = "u662616604_1Iw8P";
-    $senha ="x]5kr8GpS^?F";
+    $senha ="XxHr9+0[7";
     $dbname="u662616604_nyil6";
 
     //criar a conexao

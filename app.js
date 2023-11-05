@@ -23,3 +23,4 @@ menu_item.forEach((item) => {               /* evento para a troca de menus deks
 		mobile_menu.classList.toggle('active');
 	});
 });
+
