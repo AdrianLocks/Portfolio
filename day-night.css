@@ -80,7 +80,7 @@
 	.day-night{
 		position:fixed;
 		margin-top: 20px;
-		right: 75px;
+		right: 25px; /* antes 75 */
 		
    }
 }
