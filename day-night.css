@@ -30,7 +30,7 @@
 	color: var(--background-color);
 	right:100%;
 	border: 1px solid var(--contato-color);
-	margin-right:15%;
+	margin-right:3%;
 	cursor:pointer;
 	transition: all 0.3s ease;
 	border-radius: 50%;
