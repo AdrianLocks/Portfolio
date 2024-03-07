@@ -8,7 +8,7 @@
 	position:fixed;
 	right:0;
 	margin-right: 1%;
-	top:110px; /* antes 80 */
+	top:80px;
 	padding:15px ;
 	width: 25px;
 	height: 25px;;
@@ -85,6 +85,15 @@
    }
 }
 
+@media screen and (min-width: 601px) and (max-width:720px){      /*novo*/
+
+	.day-night{
+		position:fixed;
+		margin-top: 50px;    /*novo*/
+		right: 55px; 
+		
+   }
+}	
  /*responsividade celulares maiores */
  @media  screen and (min-width: 360px) and (max-width:600px){
 
