@@ -69,7 +69,7 @@
 		
 		right:0px;
 		margin-right: 7%;
-		top:20px;
+		top:50px; /* antes 20 */
 		
 	}
 	
@@ -80,7 +80,7 @@
 	.day-night{
 		position:fixed;
 		margin-top: 20px;
-		right: 25px; /* antes 75 */
+		right: 75px; 
 		
    }
 }
