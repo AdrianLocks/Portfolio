@@ -65,7 +65,7 @@
 
 	.day-night{
 		
-		
+		position:absolute;
 		
 		right:0px;
 		margin-right: 7%;
@@ -78,7 +78,7 @@
 @media screen and (min-width: 768px) and (max-width:960px){
 
 	.day-night{
-		position:fixed;
+		position:absolute;
 		margin-top: 20px;
 		right: 75px; 
 		
