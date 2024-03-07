@@ -75,7 +75,7 @@
 	
 }	
 
-@media screen and (min-width: 768px) and (max-width:960px){
+@media screen and (min-width: 720px) and (max-width:960px){
 
 	.day-night{
 		position:fixed;
@@ -84,6 +84,12 @@
 		
 		
    }
+	.day-night .s-icon{
+    
+	   margin-top:40px;
+		right:10px;
+    
+	}
 }
 
 
