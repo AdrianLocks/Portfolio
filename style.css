@@ -694,8 +694,9 @@ p {
 
 /* sessao  formacao-cursos*/
 
-.btn-group {                         /*--------------------------------------------------------------*/
+.btn-group {                 /*--------------------------------------------------------------*/
 	z-index: 1;
+	display:flex;
 	/*left: 399px;*/
 	top:-30px;
 	/*position: relative;*/
@@ -703,13 +704,16 @@ p {
 	background-color: var(--primary-color);
 	background-image: var(--primary-color);
 	padding: 5px 5px 5px 5px;
-	
+	justify-content: center;
 	align-items: center;
 	align-content: center;
 	width: 140px;
 	height: 35px;
 }
 .btn-group .dropdown-menu{
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 	border-radius: 5%;
 	border:1px solid var(--secundary-color);
 	background:var(--sub-menu-color);
