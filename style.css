@@ -694,11 +694,11 @@ p {
 
 /* sessao  formacao-cursos*/
 
-.btn-group {
+.btn-group {                         /*--------------------------------------------------------------*/
 	z-index: 1;
-	left: 399px;
+	/*left: 399px;*/
 	top:-30px;
-	position: relative;
+	/*position: relative;*/
 	background-color: var(--primary-color);
 	background-image: var(--primary-color);
 	padding: 5px 5px 5px 5px;
