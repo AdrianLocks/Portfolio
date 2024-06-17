@@ -1276,9 +1276,11 @@ p {
 		float:right;
 	} */
     .btn-group{
-		position:relative;
-		margin-left: -15px;
-		align-items: center;
+		justify-content: center;
+	        align-items: center;
+	        align-content: center;
+		/*margin-left: -15px;*/
+		
 		display: flex;
 	}
 	#principal .social-inicio{
@@ -1369,9 +1371,11 @@ p {
 		color:var(--primary-color);
 	}
 	.btn-group{
-		position:relative;
-		margin-left: 15px;
-		align-items: center;
+		justify-content: center;
+	        align-items: center;
+	        align-content: center;
+		/*margin-left: 15px;*/
+		
 		display: flex;
 	}
 }
@@ -1416,13 +1420,14 @@ p {
 }
 .btn-group {
 	z-index: 1;
-	left: 100px;
+	/*left: 100px;*/
 	top:-20px;
-	position: relative;
+	/*position: relative;*/
 	background-color: var(--primary-color);
 	background-image: var(--primary-color);
 	padding: 5px 5px 5px 5px;
 	margin: 0;
+	justify-content:center;
 	align-items: center;
 	align-content: center;
 	width: 140px;
@@ -1536,11 +1541,11 @@ p {
 	}
 	/* sessao cursos*/
 	.btn-group {
-		
+		justify-content:center;
 		z-index: 1;
-		left: 129px;
+		/*left: 129px;*/
 		top:-30px;
-	    position: relative;
+	        /*position: relative;*/
 		background-color: var(--primary-color);
 		background-image: var(--primary-color);
 		padding: 5px 5px 5px 5px;
@@ -1627,8 +1632,10 @@ p {
     
 	
 	.btn-group{
-		position:relative;
-		margin-left: -300px;
+		/*position:relative;
+		/*margin-left: -300px;*/
+		justify-content:center;
+		align-content:center;
 		align-items: center;
 		display: flex;
 	}
@@ -1654,10 +1661,12 @@ p {
 			color:var(--primary-color);
 		}
 		.btn-group{
-			position:relative;
-			margin-left: 15px;
+			/*position:relative;
+			margin-left: 15px;*/
 			align-items: center;
 			display: flex;
+			justify-content:center;
+			align-content:center;
 		}
 	}
 	
