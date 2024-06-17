@@ -700,7 +700,7 @@ p {
 	/*left: 399px;*/
 	top:-30px;
 	/*position: relative;*/
-	position: absolute;
+	/*position: absolute;*/
 	background-color: var(--primary-color);
 	background-image: var(--primary-color);
 	padding: 5px 5px 5px 5px;
