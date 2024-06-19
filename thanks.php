@@ -29,7 +29,7 @@ session_start();
     <div class="header container">     <!--comeco das div para estilizar por grupos-->
       <div class="nav-bar">
         <div class="brand">
-          <a href="https://portfolio.devlocks.net.br/#principal">
+          <a href="https://adrianlocks.github.io/Portfolio/#principal">
             <h1><span>A</span>dri<span>A</span>N</h1> <!--divisao das letras para estilizacao-->
           </a>
         </div>
@@ -42,11 +42,11 @@ session_start();
 
           
           <ul>
-            <li><a href="https://portfolio.devlocks.net.br/#" data-after="Home">Inicio</a></li>  <!--lista de links desordenada-->
-            <li><a href="https://portfolio.devlocks.net.br/#projeto" data-after="Projeto">Portfólio</a></li>
-            <li><a href="https://portfolio.devlocks.net.br/#sobre" data-after="sobre">Sobre</a></li>
+            <li><a href="https://adrianlocks.github.io/Portfolio/#principal" data-after="Home">Inicio</a></li>  <!--lista de links desordenada-->
+            <li><a href="https://adrianlocks.github.io/Portfolio/#projeto" data-after="Projeto">Portfólio</a></li>
+            <li><a href="https://adrianlocks.github.io/Portfolio/#sobre" data-after="sobre">Sobre</a></li>
             <li>
-              <a class="forma" href="https://portfolio.devlocks.net.br/#cursos"  data-after="formacao" >formação</a>
+              <a class="forma" href="https://adrianlocks.github.io/Portfolio/#cursos"  data-after="formacao" >formação</a>
               
                <!--<ul class="sub-menu">
                  <li><a href="#cursos" data-after="cursos">cursos</a></li>
@@ -56,7 +56,7 @@ session_start();
             
             </li>
 
-            <li><a href="https://portfolio.devlocks.net.br/#contato" data-after="Contato">Contato</a></li>
+            <li><a href="https://adrianlocks.github.io/Portfolio/#contato" data-after="Contato">Contato</a></li>
             
            
           </ul>
@@ -106,7 +106,7 @@ session_start();
 
     <div class="social-inicio">  <!--bloco para as midias sociais-->
       <ul>
-        <li><a href="https://www.facebook.com/adrianlocks2012" target="_blank" title="Facebook"><i class="fa-brands fa-facebook" alt="facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/adrian.locks?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D" target="_blank" title="Instagram"><i class="fa-brands fa-instagram" alt="instagram"></i></a></li>
         <li><a href="https://wa.me/+55048984079002" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp" alt="whatsapp"></i></a></li>
         <li><a href="https://www.linkedin.com/in/adrian-cristopher-locks-1b3178206/" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin" alt="linkedin"></i></a></li>
         <li><a href="https://github.com/AdrianLocks" target="_blank" title="Github"><i class="fa-brands fa-github" alt="github" ></i></a></li>
@@ -134,7 +134,7 @@ session_start();
       <h2>Midias Sociais:</h2>
       <div class="social-icon">  <!--bloco para as midias sociais-->
         <div class="social-item">
-          <a href="https://www.facebook.com/adrianlocks2012" target="_blank" title="Facebook"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          <a href="https://www.instagram.com/adrian.locks?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D" target="_blank" title="Instagram"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
         </div>
         <div class="social-item">
           <a href="https://wa.me/+55048984079002" target="_blank" title="WhatsApp"><img src="https://img.icons8.com/bubbles/100/000000/whatsapp.png" /></a>
