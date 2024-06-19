@@ -524,7 +524,7 @@ if ("serviceWorker" in navigator) {
                  ?>         <!--processa.php--><!--no action! para conexao com o BD ,arquivo ja esta ja pasta do projeto-->
                  
                   <!--<form data-toggle="validator" role="form" id="portfolioform"  action="https://formsubmit.co/adrianlocks2013@gmail.com" method="POST" > -->
-                  <form action="https://formsubmit.co/adrianlocks2013@gmail.com" method="POST" >
+                  <form action="envia_fale.php" method="post" name="form" >
                       <div class="form-group">
                         <label  for="inputName" class="control-label">nome:</label>
                         <input name="nome_usuario" type="text" class="form-control" id="inputName" placeholder="nome" required>
@@ -545,7 +545,7 @@ if ("serviceWorker" in navigator) {
                         <textarea  name="mensagem_usuario" class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       
-                      <input type="hidden" name="_next" value="https://portfolio.devlocks.net.br/thanks.php">
+                      <input type="hidden" name="_next" value="https://adrianlocks.github.io/Portfolio/thanks.php">
                       <input type="hidden" name="_autoresponse" value="Obrigado! Em breve entrarei em contato!">
                       
                       <button type="submit" value="enviar" class="btn btn-primary">Enviar</button>
